@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <p>Activités parascolaires 2024-2025</p>
+        <img src="images/solicode.svg" alt="solicode logo">
+        <h1>Inscription aux clubs et activités parascolaires</h1>
+
+    </header>
+    <main>
+        
+        <form action="" method="post">
+            
+            <h2><i class="fa-solid fa-user-plus"></i>Formulaire d'inscription</h2>
+            <div class="name">
+                <div>
+            <label for="last-name">Nom</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Votre nom" required>
+            </div>
+            <div>
+            <label for="first-name">Prénom</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Votre prénom" required>
+            </div>
+            </div>
+            <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="exemple@ofppt.ma" required>
+            </div>
+            <fieldset class="radio">
+                <legend>Genre</legend>
+                <div>
+                <input type="radio" name="gender" id="male" value="male" required>
+                <label for="male">Masculin</label>
+                </div>
+                <div>
+                <input type="radio" id="female" value="female" name="gender">
+                <label for="female">Féminin</label>
+                </div>
+            </fieldset>
+            <div class="dropdown-box">
+            <div class="first-select-box">
+                <label for="filiere">Filière</label>
+                <select id="filiere" name="filiere" required>
+                    <option selected="" disabled value="">Choisir une filière</option>
+                    <option value="web"> Développement web</option>
+                    <option value="mobile"> développement mobile</option>
+                </select>
+            </div>
+            <div class="second-select-box">
+                <label for="group">Groupe</label>
+                <select disabled name="group">
+                    <option selected="" >Choisir d'abord une filière</option>
+                </select>
+            </div>
+            </div>
+            <fieldset class="clubs">
+                <legend>Clubs (maximum 2)</legend>
+                <div>
+                <input type="checkbox" name="clubs" id="ai" value="ai">
+                <label for="ai"> Club IA </label>
+                </div>
+                <div>
+                <input type="checkbox" name="clubs" id="hackathon" value="hackathon">
+                <label for="hackathon"> Club Hackathon </label>
+                </div>
+                <div>
+                <input type="checkbox" name="clubs" id="music" value="music">
+                <label for="music"> Club Musique </label>
+                </div>
+                <div>
+                <input type="checkbox" id="sport" name="clubs" value="sport">
+                <label for="sport"> Club Sport</label>
+                </div>
+            </fieldset>
+            <div class="buttons">
+            <button type="button" id="submit"><i class="fa-solid fa-user-plus"></i>Ajouter</button>
+            <button type="reset"><i class="fa-solid fa-arrow-rotate-left"></i>Annuler</button>
+            </div>
+
+
+        </form>
+        <div class="list">
+            <div class="top">
+            <h2><i class="fa-solid fa-users"></i>Liste des inscrits</h2>
+            <div id="right">0 inscription</div>
+            </div>
+            <div class="centered-content">
+            <p>Aucune inscription pour le moment <span>Les inscriptions apparaîtront ici</span></p>
+            </div>
+
+        </div>
+        <div class="statistics">
+            <h2><i class="fa-solid fa-chart-simple"></i>Statistiques d'inscription</h2>
+            <div class="data-container">
+            <div class="inscription-statistics">
+                <div class="icon">
+                <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="text">
+                <h3>Total inscriptions</h3>
+                <p>0</p>
+                </div>
+
+            </div>
+            <div class="inscription-statistics">
+                <div class="icon">
+                <i class="fa-solid fa-user-check"></i>
+                </div>
+                <div class="text">
+                <h3>Masculin / Féminin</h3>
+                <p> 0/0</p>
+                </div>
+                
+
+            </div>
+            <div class="inscription-statistics">
+                <div class="icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="text">
+                <h3>Web / Mobile</h3>
+                <p>0/0</p>
+                </div>
+            </div>
+            </div>
+            
+            
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy 2024 Solicode — Établissement de formation professionnelle</p>
+
+    </footer>
+    
+</body>
+</html>

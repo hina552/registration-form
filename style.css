@@ -1,0 +1,308 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.woff2') format('woff2'),
+        url('fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    html{
+    font-family: "roboto", sans-serif;
+    font-size: 14px;
+}
+body{
+    background-color: #eff6ff;
+    margin-top: 60px;
+    color: #475569;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header, main{
+    margin: 0 30px;
+}
+main{
+    flex: 1;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header p{
+    text-align: center;
+    background-color: white;
+    padding: 5px 20px;
+    margin-bottom: 25px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    border-radius: 15px;
+}
+img{
+    width: 300px;
+    height: auto;
+    margin-top: 2rem;
+   
+}
+h1{
+    margin-bottom: 4rem;
+}
+form{
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    font-size: 1.2rem;
+  
+}
+select, textarea, input, button{
+    font-family: inherit;
+    font-size: 100%;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #475569;
+}
+h2 i{
+    margin-right: 10px;
+}
+label, legend{
+    display: block;
+    margin-bottom: 5px;
+}
+input{
+    width: 100%;
+    height: 40px;
+    flex: 1;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+
+}
+.name div{
+    flex: 1;
+}
+h2{
+    margin-bottom: 20px;
+
+}
+fieldset{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+fieldset.radio{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+     
+}
+.radio div{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 10px;
+    
+
+}
+.radio label{
+    margin-bottom: 0;
+}
+.dropdown-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+select{
+     width: 100%;
+     height: 40px;
+}
+.dropdown-box div{
+    flex: 1;
+
+}
+input, select{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(71, 85, 105, 0.5);
+    padding-left: 8px;
+}
+.clubs{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.clubs div{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex: 1;
+    border: 1px solid #4755;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin-bottom: 40px;
+    height: 50px;
+}
+form .buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+button i{
+    margin-right: 5px;
+}
+button{
+    flex: 1;
+    height: 50px;
+    border-radius: 5px;
+    
+}
+button[type="button"]{
+    background-color: #fdd413;
+    text-align: center;
+    border: none;
+}
+button[type="reset"]{
+    border: none;
+}
+input[type="checkbox"]{
+    padding-left: 0;
+}
+input[type="checkbox"], input[type="radio"]{
+    height: auto;
+  flex: unset;
+  width: auto;
+}
+h1, h2{
+    font-weight: 200;
+    
+}
+.list{
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .top div:not(.top){
+    background-color: #b2c0d3 ;
+    padding: 5px 7px;
+    border-radius: 15px;
+  
+}
+span{
+    display: block;
+}
+ .centered-content span, .centered-content p{
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+.centered-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #b2c0d3;
+    margin-bottom: 35px;
+    
+}
+.statistics{
+    margin-top: 30px;
+    padding: 20px;
+    height: fit-content;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    background-color: white;
+    margin-bottom: 50px;
+   
+}
+.data-container{
+    display: flex;
+    justify-content: space-between;
+     gap: 15px;
+     flex-wrap: wrap;
+
+    
+}
+.statistics .fa-solid:not(.fa-chart-simple){
+    /*border: 1px solid black;*/
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 27px;
+}
+.statistics .fa-users{
+    background-color:  #3a45b9;
+    color: white;
+    
+}
+.fa-graduation-cap{
+    background-color: #0ba976;
+    color: white;
+}
+.fa-user-check{
+    color: white;
+    background-color: #fdd413;
+}
+.inscription-statistics{
+    /*border: 1px solid #75808f;*/
+    box-shadow: 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 15px 18px;
+    gap: 10px;
+   
+}
+h2, .list #right{
+    margin-bottom: 40px;
+}
+.text{
+    flex: 2;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.text p{
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+.icon{
+    flex: 1;
+}
+
+
+footer{
+    padding: 40px;
+    border: 1px solid rgba(189, 205, 226, 0.4);;
+   
+}
+footer p{
+    font-size: 14px;
+    text-align: center;
+}
+
+
